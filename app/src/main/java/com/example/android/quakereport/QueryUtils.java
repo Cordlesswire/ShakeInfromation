@@ -58,7 +58,7 @@ public class QueryUtils {
 
             //Loop through each Earthquake in the earthquakeArray
             for(int i = 0; i < earthquakeArray.length(); i++){
-
+                JSONObject currentEarthquake = earthquakeArray.getJSONObject(i);
             }
 
 
