@@ -49,6 +49,8 @@ public class EarthquakeAdapter extends ArrayAdapter<Earthquake> {
         // Find the earthquake at the given position in the list of earthquakes
         Earthquake currentEarthquake = getItem(position);
 
+
+        //Binding the data from the Earthquake Object to the Views in the ListItem layout
         // Find the TextView with view ID magnitude
         TextView magnitudeView = (TextView) listItemView.findViewById(R.id.magnitude);
         // Display the magnitude of the current earthquake in that TextView
@@ -70,6 +72,5 @@ public class EarthquakeAdapter extends ArrayAdapter<Earthquake> {
         return  listItemView;
 
     }
-
 }
 
