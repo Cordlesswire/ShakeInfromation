@@ -54,6 +54,13 @@ public class QueryUtils {
             // build up a list of Earthquake objects with the corresponding data.
             //Parses the whole List of data we get from the API
             JSONObject baseJsonResponse = new JSONObject(SAMPLE_JSON_RESPONSE);
+            JSONArray earthquakeArray = baseJsonResponse.getJSONArray("features");
+
+            //Loop through each Earthquake in the earthquakeArray
+            for(int i = 0; i < earthquakeArray.length(); i++){
+
+            }
+
 
 
         } catch (JSONException e) {
