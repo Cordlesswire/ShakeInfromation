@@ -63,7 +63,9 @@ public class QueryUtils {
                   //Extracting all the values needed to be displayed
                 String magnitude = properties.getString("mag");
                 String location = properties.getString("place");
-                String time = properties.getString("time");
+
+                // Extract the value for the key called "time"
+                long time = properties.getLong("time");
 
                 //New Earthquake object
                 Earthquake earthquake = new Earthquake(magnitude, location, time);
