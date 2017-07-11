@@ -69,7 +69,7 @@ public class QueryUtils {
                 Earthquake earthquake = new Earthquake(magnitude, location, time);
 
                 //Add new earthquake to the list of earthquakes
-                earthquake.add(earthquake);
+                earthquakes.add(earthquake);
 
             }
 
