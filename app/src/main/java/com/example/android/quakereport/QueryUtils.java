@@ -52,6 +52,9 @@ public class QueryUtils {
 
             // TODO: Parse the response given by the SAMPLE_JSON_RESPONSE string and
             // build up a list of Earthquake objects with the corresponding data.
+            //Parses the whole List of data we get from the API
+            JSONObject baseJsonResponse = new JSONObject(SAMPLE_JSON_RESPONSE);
+
 
         } catch (JSONException e) {
             // If an error is thrown when executing any of the above statements in the "try" block,
