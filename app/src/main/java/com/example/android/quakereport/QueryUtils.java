@@ -59,6 +59,18 @@ public class QueryUtils {
             //Loop through each Earthquake in the earthquakeArray
             for(int i = 0; i < earthquakeArray.length(); i++){
                 JSONObject currentEarthquake = earthquakeArray.getJSONObject(i);
+                JSONObject properties = currentEarthquake.getJSONObject("properties");
+                  //Extracting all the values needed to be displayed
+                String magnitude = properties.getString("mag");
+                String location = properties.getString("place");
+                String time = properties.getString("time");
+
+                //New Earthquake object
+                Earthquake earthquake = new Earthquake(magnitude, location, time);
+
+                //Add new earthquake to the list of earthquakes
+                earthquake.add(earthquake);
+
             }
 
 
